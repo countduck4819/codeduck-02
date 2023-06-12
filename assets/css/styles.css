@@ -661,14 +661,14 @@ header.fixed {
     display: inline-block;
     right: -27px;
     height: 1px;
-    background-color: #E2DFDA;
+    background-color: #e2dfda;
     position: absolute;
     left: 0px;
     bottom: 0px;
     border-radius: 0.5px;
 }
 
-.item .info .title a{
+.item .info .title a {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -688,7 +688,7 @@ header.fixed {
     background-color: var(--bg-color);
 }
 
-.blog .dots{
+.blog .dots {
     margin-top: 38px;
     display: flex;
     justify-content: center;
@@ -698,7 +698,7 @@ header.fixed {
 .blog .dots .dot {
     width: 6px;
     height: 6px;
-    background-color: #5F5B53;
+    background-color: #5f5b53;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -706,4 +706,92 @@ header.fixed {
 .blog .dot.active {
     background-color: var(--bg-color);
     cursor: default;
+}
+
+/* Footer */
+.footer {
+    background-color: #2e2100;
+    padding: 96px 0px 28px;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column:first-child {
+    width: 35%;
+}
+
+.footer .row .column:not(:first-child) {
+    margin-left: 130px;
+}
+
+.footer .desc {
+    margin-top: 18px;
+    width: 267px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .socials {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer .column .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+    /* border-bottom: 1px solid green;
+    display: inline-block;
+    min-width: 130px;
+    padding-bottom: 14px; */
+}
+
+.footer .column .title::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background-color: #59554b;
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+
+.footer .column:nth-child(2) .list a,
+.footer .column:nth-child(3) .list a {
+    white-space: nowrap;
+}
+
+.footer .list li {
+    margin-top: 12px;
+}
+
+.footer .list li > a {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86em;
+    color: #bfbcb2;
+}
+
+.footer .list a strong {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.86em;
+}
+
+.footer .copyright p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86em;
+    text-align: center;
+    margin-top: 28px;
+    color: #807d74;
 }
